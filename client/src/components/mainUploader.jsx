@@ -1,12 +1,19 @@
-import * as React from "react";
-import { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import 'tailwindcss/tailwind.css';
 
-function MainUploader(){
-    return (
-        <div>
-        <h1>Upload your files here</h1>
-        </div>
-    );
+function UserAuth() {
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!localStorage.getItem("accessToken")) {
+      navigate("/");
+    }
+  }, [navigate]);
+
+
+  return(
+
+  );
 }
-
-export default MainUploader;

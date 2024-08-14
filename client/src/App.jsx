@@ -8,9 +8,10 @@ function App() {
 
   return (
         
-<div>
-      <div className="container mx-auto mt-4">
+<div className=''>
+      <div className="container mx-auto ">
         <NavBar />
+        <div className='block h-20 w-[100%] bg-gray-800'></div>
           <Router>
             <Routes>
               <Route exact path="/" element={<UserAuth />} />
