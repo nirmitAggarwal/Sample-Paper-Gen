@@ -3,9 +3,6 @@ import { useEffect, useState } from "react";
 
 function UserAuth() {
 
-
-  
-
   function loginWithGithub() {
     window.location.assign('http://github.com/login/oauth/authorize?client_id=' + process.env.REACT_APP_CLIENT_ID );
   }
