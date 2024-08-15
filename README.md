@@ -1,0 +1,3 @@
+- login with github
+- upload pictures / tags of questions in category
+- wait for the next update
