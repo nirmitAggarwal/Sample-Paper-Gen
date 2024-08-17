@@ -13,7 +13,7 @@ function NavBar() {
 
     if (code && !localStorage.getItem("accessToken")) {
       async function getAccessToken() {
-        await fetch("http://localhost:3000/accessToken?code=" + code, {
+        await fetch("https://sample-paper-gen.onrender.com/accessToken?code=" + code, {
           method: "GET",
         })
           .then((response) => response.json())
@@ -31,7 +31,7 @@ function NavBar() {
   }, [reRender]);
 
   async function getUserData() {
-    await fetch("http://localhost:3000/user", {
+    await fetch("https://sample-paper-gen.onrender.com/user", {
       method: "GET",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("accessToken"),
@@ -46,7 +46,7 @@ function NavBar() {
   function loginWithGithub() {
     window.location.assign(
       "https://github.com/login/oauth/authorize?client_id=" +
-        process.env.REACT_APP_CLIENT_ID
+        "Ov23lih8eFJzhNyKOWlC"
     );
   }
 
